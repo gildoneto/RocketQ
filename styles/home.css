@@ -26,7 +26,7 @@ main{
 }
 
 main .container {
-    width: min(36.3rem 100%)
+    width: min(36.3rem, 100%)
 }
 
 main h2 {
@@ -39,4 +39,9 @@ main h2 {
 input {
     border: .2rem solid var(--grey-blue);
     padding: 0 1.6rem;
+}
+
+input, button, .button {
+    width: 100%;
+    margin-bottom: 1.8rem;
 }
