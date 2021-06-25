@@ -2,9 +2,9 @@
   "name": "RocketQ",
   "version": "1.0.0",
   "description": "Projeto criado para gerenciar perguntas anonimas",
-  "main": "index.js",
+  "main": "src/server.js",
   "scripts": {
-    "start": "nodemon src/server.js"
+    "start": "nodemon ."
   },
   "repository": {
     "type": "git",
