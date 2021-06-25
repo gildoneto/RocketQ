@@ -1,0 +1,24 @@
+{
+  "name": "RocketQ",
+  "version": "1.0.0",
+  "description": "Projeto criado para gerenciar perguntas anonimas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gildoneto/RocketQ.git"
+  },
+  "keywords": [],
+  "author": "@gildoneto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gildoneto/RocketQ/issues"
+  },
+  "homepage": "https://github.com/gildoneto/RocketQ#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
+  }
+}
