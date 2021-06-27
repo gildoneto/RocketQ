@@ -30,9 +30,18 @@ Para criar seu proprio projeto do zero baseado neste padrao do RocketQ, siga as 
 
 4 - Estrutura de pastas deste projeto segue o seguinte padrao:
 
-**node_modules** -> pasta criada automaticamente pelo npm, e onde ficam todas as dependencias do projeto.
+**/node_modules** -> pasta criada automaticamente pelo npm, e onde ficam todas as dependencias do projeto.
 *Se estiver trabalhando com GIT Coloque sempre essa pasta no .gitignore*
 
-**public** -> contem subpastas relacionadas ao front. **images** para as imagens, **scripts** para scrips javascript, e **styles** para os arquivos de estilo CSS.
+**/public** -> contem subpastas relacionadas ao front. **/images** para as imagens, **/scripts** para scrips javascript, e **/styles** para os arquivos de estilo CSS.
 
-**src** -> 
+**/src** -> pasta onde ficara todo o codigo do projeto com as seguintes subpastas e arquivos:
+
+- **/controllers**: 
+- **/db**: 
+- **/views**: 
+- **route.js**: 
+- **server.js**: arquivo com as configuracoes necessarias para iniciar o servidor
+    - importe o **express** para usa-lo no projeto
+        > const express = require('express')
+    - sdf
