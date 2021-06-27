@@ -28,7 +28,10 @@ Para criar seu proprio projeto do zero baseado neste padrao do RocketQ, siga as 
 3 - para instalar o framework Express possibilitando usar metodos utilitarios HTTP rode este comando
 > *npm install express*
 
-4 - A estrutura de pastas e arquivos deste projeto segue o seguinte padrao:
+4 - para instalar o nodemon apenas como uma depedencia de desenvolvimento, e nao do projeto
+> *npm install nodemon -D*
+
+5 - A estrutura de pastas e arquivos deste projeto segue o seguinte padrao:
 
 **/node_modules** -> pasta criada automaticamente pelo npm, e onde ficam todas as dependencias do projeto.
 *Se estiver trabalhando com GIT Coloque sempre essa pasta no .gitignore*
