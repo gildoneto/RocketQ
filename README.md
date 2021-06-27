@@ -65,3 +65,4 @@ Para criar seu proprio projeto do zero baseado neste padrao do RocketQ, siga as 
     "start": "nodemon .",<br>
     "init-db": "node src/db/init.js"<br>
   }
+    - **"main"**: mude para "src/server.js" para que o projeto inicie a partir deste nosso arquivo.
