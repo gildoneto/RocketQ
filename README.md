@@ -41,9 +41,11 @@ Para criar seu proprio projeto do zero baseado neste padrao do RocketQ, siga as 
 
 - **/db**: 
 
-- **/views**: 
+- **/views**: pasta com as paginas html, porem com a extensao .ejs
 
-- **route.js**: 
+- **route.js**: arquivo com as configuracoes de rotas de toda a aplicacao
+    - precisa importar o express para funcionar
+        > const express = require('express')
 
 - **server.js**: arquivo com as configuracoes necessarias para iniciar o servidor. Nele devemos
     - importar o **express** para usa-lo no projeto e atribuir a uma constante *server*
