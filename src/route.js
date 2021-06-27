@@ -66,5 +66,5 @@ A FUNCAO index DO QuestionController: src/controllers/QuestionController.js
 */
 route.post('/question/:room/:question/:action', QuestionController.index)
 
-// EXPORTA O MODULO route PARA QUE ELE POSSA SER IMPORTADO EM OUTROS ARQUIVOS
+// EXPORTA O MODULO route PARA QUE ELE POSSA SER IMPORTADO EM OUTROS ARQUIVOS DO PROJETO
 module.exports = route
