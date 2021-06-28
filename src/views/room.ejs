@@ -29,6 +29,7 @@
                     <img src="/images/logo.svg" alt="Logo Rocket.Q"/>
                 </a>
                 <div class="buttons">
+                    <!-- data-id para trabalhar com dados de forma mais facil -->
                     <div class="button outlined" id="room-id" data-id="<%= roomId %>">
                         #<%= roomId %>
                         <img src="/images/copy.svg" alt="Copiar numero da sala"/>
@@ -127,6 +128,7 @@
                 
                 <form action="" method="POST">
                     <label class="screen-only" for-id="password">Digite sua senha</label>
+                    <!-- adiciona atributo name para ser enviado no body -->
                     <input type="password" name="password" placeholder="Digite sua senha">
 
                     <div class="buttons">

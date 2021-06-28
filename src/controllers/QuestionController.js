@@ -7,6 +7,7 @@ module.exports = {
         const roomId = req.params.room
         const questionId = req.params.question
         const action = req.params.action
+        // no caso do body, adicionar o atributo name no input
         const password = req.body.password
 
         // Verificar se a senha esta correta 

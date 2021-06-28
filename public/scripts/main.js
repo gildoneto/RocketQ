@@ -31,20 +31,28 @@ deleteButton.forEach(button => {
     button.addEventListener('click', (event) => handleClick(event, false))
 })
 
+/* A variavel event recebe o elemento onde aconteceu o evento*/
 //funcao recebe um event e atribue o valor true a variavel check
 function handleClick(event, check = true){
+    // evita que o click altere a url do navegador ao clicar
     event.preventDefault()
+    // se check for true atribui 'Marcar como lida', senao atribui 'Excluir'
     const text = check ? 'Marcar como lida' : 'Excluir'
+    // se check for true atribui 'check', senao atribui 'delet'
     const slug = check ? 'check' : 'delete'
+    // armazena o data-id da id #room-id (sera usado no form.setAttribute)
     const roomId = document.querySelector('#room-id').dataset.id
+    // armazena o data-id do elemento clicado (sera usada no form.setAttribute)
     const questionId = event.target.dataset.id
-
+    // armazena as informacoes do formulario
     const form = document.querySelector('.modal form')
+    //seta o atributo action dinamicamente dentro do form
     form.setAttribute('action', `/question/${roomId}/${questionId}/${slug}`)
 
     modalTitle.innerHTML = `${text} esta pergunta`
     modalDescription.innerHTML= `Tem certeza que deseja ${text.toLowerCase()} esta pergunta?`
     modalButton.innerHTML = `Sim, ${text.toLowerCase()}`
+    // se check for true, remove a classe .red do modal, senao, adiciona a classe
     check ? modalButton.classList.remove('red') : modalButton.classList.add('red')
     
     /* CHAMA A FUNCAO open() DO modal.js
